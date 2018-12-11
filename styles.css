@@ -1,0 +1,37 @@
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    flex-direction: column;
+    background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+    background-size: 400% 400%;
+    animation: Gradient 50s ease infinite;
+    box-sizing: border-box;
+    font-family: Roboto, sans-serif;
+}
+
+#title {
+    background: -webkit-linear-gradient(red, blue);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#canvas {
+    border: 5px solid black;
+    background-color: white;
+    box-sizing: border-box;
+}
+
+@keyframes Gradient {
+    0% {
+        background-position: 0 50%;
+    }
+    50% {
+        background-position: 100% 50%
+    }
+    100% {
+        background-position: 0 50%;
+    }
+}
